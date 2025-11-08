@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page with JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Interactive Page 🚀</h1>
+    <button id="themeToggle">🌞 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Feature -->
+    <section class="feature">
+      <h2>🎮 Click Counter</h2>
+      <p>Clicks: <span id="counterValue">0</span></p>
+      <button id="incrementBtn">+ Increase</button>
+      <button id="resetBtn">🔁 Reset</button>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="feature">
+      <h2>❓ FAQ</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is JavaScript?</button>
+        <p class="faq-answer hidden">JavaScript is a scripting language that makes web pages interactive.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is the DOM?</button>
+        <p class="faq-answer hidden">The Document Object Model (DOM) is a representation of the page that JS can manipulate.</p>
+      </div>
+    </section>
+
+    <!-- Form Validation -->
+    <section class="feature">
+      <h2>📝 Register</h2>
+      <form id="signupForm" novalidate>
+        <label>Name: <input type="text" id="name" required /></label>
+        <small class="error" id="nameError"></small>
+
+        <label>Email: <input type="email" id="email" required /></label>
+        <small class="error" id="emailError"></small>
+
+        <label>Password: <input type="password" id="password" required /></label>
+        <small class="error" id="passwordError"></small>
+
+        <button type="submit">Submit</button>
+        <p id="formSuccess" class="success hidden">✅ Form submitted successfully!</p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
